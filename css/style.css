@@ -91,14 +91,14 @@ a {
     text-align: center;
 }
 
-.section-promo h2 {
+.promo-title {
     font-size: 40px;
     font-style: italic;
 
     margin-bottom: 50px;
 }
 
-.section-promo h1 {
+.promo-welcome {
     font-size: 75px;
     text-transform: uppercase;
 
@@ -212,11 +212,6 @@ a {
     font-style: italic;
 }
 
-.about h2,
-.about p:nth-child(2) {
-    text-align: center;
-}
-
 .about {
     padding: 120px 0;
 }
@@ -225,49 +220,80 @@ a {
     color: #111111;
 }
 
-.about h2 {
+.about .container h2:nth-child(1),
+.about .container p:nth-child(2) {
+    text-align: center;
+}
+
+.about .container h2:nth-child(1) {
+    margin-bottom: 20px;
     font-size: 40px;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
-.block-description a:first-child > h3 {
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.about .container p:nth-child(2) {
+    margin-bottom: 80px;
+    font-style: italic;
+    font-size: 18px;
 }
 
-.block-description a:nth-child(2) > h3 {
+.progress-event .block-description h3:nth-child(1) {
     margin-bottom: 5px;
 }
 
-.about p:nth-child(2) {
-    font-size: 18px;
-    font-style: italic;
-    margin-bottom: 80px;
+.progress-event .block-description h3:nth-child(2) {
+    margin-bottom: 10px;
 }
 
 .progress-event {
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
+    display: flex;
 
-    grid-template-columns: 1fr 31% 1fr;
+    width: calc(50% - 2px);
+    padding-bottom: 90px;
 }
 
-.progress-event:not(:first-child) {
-    margin-top: 30px;
+.progress-event:nth-child(odd) p {
+    margin-left: 200px;
+}
+
+.progress-event:nth-child(even) p {
+    margin-right: 200px;
 }
 
 .progress-event:nth-child(odd) {
+    border-right: 2px solid #f1f1f1;
+
+    position: relative;
+    left: 2px;
+}
+
+.progress-event:nth-child(even) {
+    border-left: 2px solid #f1f1f1;
+}
+
+.progress-event:nth-child(odd) .block-description {
+    margin-right: 40px;
     text-align: right;
 }
 
-.progress-event:nth-child(4) {
-    margin-bottom: 30px;
+.progress-event:nth-child(even) .block-description {
+    margin-left: 40px;
 }
 
-.block-image {
-    text-align: center;
+.progress-event:nth-child(even) {
+    margin-left: auto;
+}
+
+.progress-event:nth-child(even) .block-image {
+    order: -1;
+}
+
+.progress-event:nth-child(odd) .block-image {
+    margin-right: -91.5px;
+}
+
+.progress-event:nth-child(even) .block-image {
+    margin-left: -91.5px;
 }
 
 .next-event {
