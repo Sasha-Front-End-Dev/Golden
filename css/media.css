@@ -1,0 +1,236 @@
+@media (max-width: 1024px) {
+    .section-header-promo {
+        padding-bottom: 150px;
+    }
+
+    .section-header {
+        margin-bottom: 80px;
+    }
+
+    .advantages,
+    .portfolio,
+    .about,
+    .team,
+    .contact-form {
+        padding: 80px 0;
+    }
+
+    .toggle-nav {
+        display: block;
+        position: relative;
+    }
+
+    .section-header ul {
+        display: none;
+    }
+
+    #checkbox:checked ~ ul {
+        display: block;
+        height: 100%;
+    
+        background-color: #111111;
+        opacity: .8;
+        box-shadow: 10px 0 25px grey;
+        padding: 5%;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    #checkbox:checked ~ ul > li {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    
+    #checkbox:checked ~ ul li:first-child {
+        margin-top: 30px;
+    }
+
+    #checkbox:checked ~ ul a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .section-promo h1 {
+        font-size: 50px;
+    }
+
+    .section-promo a,
+    .button button {
+        padding: 20px 40px;
+    }
+
+    .button {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-promo h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    .section-promo a,
+    .button button {
+        padding: 20px 25px;
+        font-weight: 400;
+    }
+
+    .portfolio-gallery-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .portfolio-gallery-wrapper .gallery-block-row:last-child {
+        margin-top: 0;
+    }
+
+    .gallery-block-row {
+        display: inline-block;
+    }
+
+    .gallery-block-row a:not(:first-child) > .gallery-block {
+        margin-top: 50px;
+    }
+
+    .progress-event:nth-child(odd) {
+        grid-template-columns: 50% 45% auto;
+    }
+
+    .progress-event:nth-child(even) {
+        grid-template-columns: auto 45% 50%;
+    }
+
+    .progress-event:not(:first-child) {
+        margin-top: 100px;
+    }
+
+    .team ul,
+    .img-wrapper {
+        flex-direction: column;
+    }
+
+    .img-wrapper {
+        align-items: center;
+    }
+
+    .img-wrapper > a:not(:first-child) {
+        margin-top: 5%;
+    }
+
+    .team li {
+        align-self: center;
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        padding: 110px 0 180px 0;
+    }
+
+    .field-inputs,
+    .field-inputs input,
+    .field-textarea,
+    .field-textarea textarea,
+    .contact-form form,
+    .progress-event:not(:last-child) {
+        width: 100%;
+    }
+
+    .field-inputs .field:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 426px) {
+    .section-header-promo {
+        padding-bottom: 100px;
+    }
+
+    .section-promo h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    .section-promo a,
+    .button button {
+        padding: 15px 20px;
+    }
+
+    .portfolio p:nth-child(2),
+    .team p:nth-child(2),
+    .about p:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .advantages .container ul,
+    .footer-wrapper ul {
+        flex-direction: column;
+    }
+
+    .advantages .container ul li {
+        margin-left: 0;
+    }
+
+    .advantages .container ul li:not(:first-child) {
+        margin-top: 50px;
+    }
+
+    .portfolio-gallery-wrapper,
+    .progress-event {
+        display: inline-block;
+    }
+
+    .portfolio-gallery-wrapper .gallery-block-row:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    .progress-event {
+        padding: 20px 0;
+        border-bottom: 1px solid #999999;
+    }
+
+    .progress-event:nth-child(odd) .block-image,
+    .progress-event:nth-child(even) .block-image {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .progress-event:nth-child(even) .block-image {
+        text-align: left;
+    }
+
+    .progress-event:nth-child(odd) .block-image {
+        text-align: right;
+    }
+
+    .footer-wrapper ul > li {
+        margin-left: 0 !important;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .section-promo h1 {
+        width: 80%;
+        margin: 0 auto 60px auto;
+    }
+
+    .section-promo a,
+    .button button {
+        padding: 15px 20px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
